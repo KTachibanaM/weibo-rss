@@ -4,8 +4,6 @@
 
 让你不再错过喜欢的博主的动态更新，即使身处纷繁复杂中。
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
 ## 特点
 1. 简单：主页链接一键转换 RSS 订阅源地址
 2. 克制：严格限制程序对微博的并发请求，不产生额外压力
@@ -17,15 +15,12 @@
 
 安装：
 ```
-git clone https://github.com/zgq354/weibo-rss.git
-cd weibo-rss
-pnpm i && pnpm build
+npm install
 ```
 
 启动：
 ```
-pnpm install pm2 -g
-pm2 start process.json
+npm run start
 ```
 
 程序将启动一个 HTTP Server，默认监听 `3000` 端口  
